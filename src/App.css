@@ -36,3 +36,83 @@
     transform: rotate(360deg);
   }
 }
+
+/* ------------------------------------------------------ */
+/* HTML COMPONENTS */
+/* -- Button -- */
+
+.button,
+.button--sm {
+  background: transparent;
+  color: var(--clr-blue);
+
+  border: 1.5px solid var(--clr-blue);
+  border-radius: 10px;
+
+  width: 100%;
+  margin: 0.75em auto;
+  padding: 1.15em;
+
+  font-weight: 700;
+
+  cursor: pointer;
+  position: relative;
+
+  transition: all 250ms ease;
+}
+
+.button--sm {
+  width: 50%;
+
+  margin: 0 auto;
+  padding: 0.25em;
+
+  border-radius: 5px;
+}
+
+.button span {
+  position: relative;
+}
+
+.button span::after {
+  content: "";
+
+  background-image: url("./assets/right-arrow-blue.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translate(50%, -50%);
+
+  width: 10px;
+  height: 12px;
+
+  transition: all 250ms ease;
+}
+
+.button:hover,
+.button--sm:hover {
+  color: var(--clr-white);
+  border: 1.5px solid var(--clr-white);
+}
+
+.button:hover span::after {
+  background-image: url("./assets/right-arrow-white.svg");
+  right: -18px;
+}
+
+.button--filled {
+  background: var(--clr-blue);
+  color: var(--clr-text);
+  border: 1px solid transparent;
+}
+
+.button--filled span::after {
+  background-image: url("./assets/right-arrow-white.svg");
+}
+
+.button--filled:hover {
+  border: 1px solid transparent;
+}
