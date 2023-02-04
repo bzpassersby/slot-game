@@ -29,7 +29,7 @@
 <h3 align="center">Your Slot is Next</h3>
 
   <p align="center">
-This is an NFT slot machine web dapp that allows users to spin to win rewards points. On the back end, it uses chainlink VRF to fetch random numbers to generate results.
+This is an NFT slot machine web dapp that allows users to spin to win reward points. On the back end, it uses chainlink VRF to fetch random numbers to generate results.
 
 Note that this repo is limited to the back end of the project which contains smart contracts, tests and deployment scripts.
 <br />
